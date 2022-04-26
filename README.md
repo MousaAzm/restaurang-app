@@ -10,6 +10,7 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 npm run start-db: Json-Server [http://localhost:3000](http://localhost:3000)
+
 npm start: Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
 Live Demo: [https://restaurant-react-app-ex.netlify.app/](https://restaurant-react-app-ex.netlify.app/)
