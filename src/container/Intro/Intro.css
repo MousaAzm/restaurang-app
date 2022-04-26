@@ -1,0 +1,58 @@
+.app__background__img {
+    background: url(../../assets/images/food-salad.jpg) no-repeat center;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+}
+
+.app__card__bg {
+    background-color: var(--color-black);
+    height: 280px;
+    width: 380px;
+    position: absolute;
+    top: 23%;
+    right: 10%;
+}
+
+.app__inner__card {
+   padding: 20px;
+   text-align: center;
+}
+
+.app__card__bg h2{
+    color: var(--color-orange);
+    padding: 15px;
+    font-family: var(--font-base);
+}
+
+.app__card__bg p{
+    color: var(--color-white);
+    padding: 15px;
+}
+
+.app__card__bg button{
+    color: var(--color-white);
+    margin: 15px;
+}
+
+.app__background__transparent{
+    height: 30vh;
+    background: url(../../assets/images/bg.png) no-repeat center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 652px) {
+    .app__card__bg {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    
+    .app__background__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
