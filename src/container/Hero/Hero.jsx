@@ -8,20 +8,16 @@ import "./Hero.css";
 const Hero = () => {
   const navigate = useNavigate();
   return (
-    <div className="app__header app__wrapper section__padding" id="home">
+    <div className="app__hero app__wrapper section__padding" id="home">
       <div className="app__wrapper_info">
         <TitleHeading title="Chase the new flavour" />
-        <h1 className="app__header-h1">Welcome to Pandora restaurant</h1>
-        <p className="p__opensans" style={{ margin: "2rem 0" }}>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected humour{" "}
-        </p>
+        <h1 className="app__hero-h1">Your needs, minutes from your door</h1>
         <button
           type="button"
           className="custom__button"
-          onClick={() => navigate(RoutingPath.booktableView)}
+          onClick={() => navigate(RoutingPath.menuView)}
         >
-          Book Table
+          GET STARTED
         </button>
       </div>
 

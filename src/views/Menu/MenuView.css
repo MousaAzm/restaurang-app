@@ -1,0 +1,118 @@
+
+.app__menu__main {
+    background: url('../../assets/images/menu-bg.jpg') center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.app__menu__container {
+    display: flex;
+    padding: 70px 10px 0 10px;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.app__display__bord {
+    margin-top: 30px;
+    border-radius: 7px;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    align-items: center;
+}
+
+.app__filter_btn_container , .app_items_container {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 3rem !important;
+}
+
+.app__filter_button {
+    display: flex;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+
+.app__filter_button .menu_tab {
+    font-family: var(--font-poppins);
+    padding: 0.6rem 1rem;
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid var(--color-orange);
+    margin: 0 5px;
+    transition: all .3s ease;
+}
+
+.app__filter_button .menu_tab:hover {
+    background-color: var(--color-orange);
+    outline: none!important;
+    text-decoration: none!important;
+    transition: all .3s ease;
+}
+
+.active_menu_tab {
+    background-color: var(--color-orange);
+    color: var(--color-gray);
+    font-family: var(--font-poppins);
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 5px;
+    transition: all .3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.app__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__spinner {
+    height: 100vh;
+}
+
+.app__display_card {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+
+@media (max-width: 1023px) {
+    .app__display_card {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    .app__filter_btn_container {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .app__display_card {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

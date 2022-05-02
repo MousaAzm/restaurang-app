@@ -14,11 +14,12 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-spinners-kit": "^1.9.1",
+    "sweetalert": "^2.1.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "start-db": "json-server --watch ./src/db/db.json --port 3000",
+    "start-db": "json-server --watch ./src/db/db.json --port 3500",
     "db-refresh": "cp ./src/db/backupdb.json ./src/db/db.json",
     "build": "react-scripts build",
     "test": "react-scripts test",

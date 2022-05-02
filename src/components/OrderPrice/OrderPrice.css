@@ -1,0 +1,23 @@
+.app__order_price_container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+.app__order_price_container .items{
+    display: flex;
+    align-items: center;
+}
+.app__order_price_container .items .span-left{
+    flex-grow: 1;
+    font-family: var(--font-poppins);
+    color: var(--color-gray);
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.app__order_price_container .items .span-right{
+    font-family: var(--font-poppins);
+    color: var(--color-gray);
+    font-weight: 600;
+    padding: 10px;
+}

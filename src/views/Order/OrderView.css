@@ -1,0 +1,104 @@
+.app_main::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.app_main {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: 100vh;
+    background-image: url(../../assets/images/order-bg.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.app__container_order {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px
+
+}
+
+.app__row_order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.app__column_order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.order__box {
+    padding: 24px;
+    background-color: hsla(0, 0%, 100%, .80);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, .3);
+    width: 100%;
+    backdrop-filter: blur(14px) saturate(180%);
+}
+
+.order_address {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.order__box .order_item {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    height: 256px;
+}
+
+
+.order_address p {
+    color: var(--color-gray);
+    font-family: var(--font-poppins);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+
+.place_order button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid var(--color-orange);
+    color: var(--color-white);
+    font-size: 17px;
+    font-weight: 500;
+    background-color: var(--color-orange);
+    font-family: var(--font-poppins);
+    transition: all .3s;
+}
+.place_order button:hover {
+   background-color: var(--color-primary);
+}
+
+.app_empty_order {
+    padding-top: 70px;
+}
+
+.app_empty_order h1{
+    color: var(--color-white);
+    text-align: center;
+}
+
+
+@media (max-width: 772px) {
+
+
+    .app__column_order {  
+       max-width: 400px;
+    }
+}

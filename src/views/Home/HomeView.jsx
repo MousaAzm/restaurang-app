@@ -1,14 +1,14 @@
 import React from 'react'
-import { Hero, Footer, AboutUs, SpecialMenu, Intro } from "../../container";
+import { Hero, Footer, SpecialMenu, Intro, Homeapp } from "../../container";
 
 const HomeView = () => {
 
   return (
     <div>
       <Hero />
-      <AboutUs />
-      <SpecialMenu />
       <Intro />
+      <SpecialMenu />
+      <Homeapp />
       <Footer />
     </div>
   )

@@ -1,14 +1,14 @@
 
-import Hero from './Hero/Hero';
-import AboutUs from './AboutUs/AboutUs'
+import Hero from './Hero/Hero'
 import SpecialMenu from './Menu/SpecialMenu'
 import Footer from './Footer/Footer'
 import Intro from './Intro/Intro'
+import Homeapp from './Homeapp/Homeapp'
 
 export {
   Hero,
-  AboutUs,
   SpecialMenu,
   Footer,
-  Intro
+  Intro,
+  Homeapp
 };

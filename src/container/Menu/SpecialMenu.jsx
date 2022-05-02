@@ -1,9 +1,13 @@
 import React from 'react'
+import { useNavigate } from "react-router";
+import RoutingPath from "../../routes/RoutingPath";
 import { SubHeading, MenuItem } from '../../components';
 import { data, images } from '../../constants';
 import './SpecialMenu.css';
 
 const SpecialMenu = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="app__specialMenu flex__center section__padding" id="menu">
     <div className="app__specialMenu-title">
@@ -36,7 +40,7 @@ const SpecialMenu = () => {
     </div>
 
     <div style={{ marginTop: 15 }}>
-      <button type="button" className="custom__button">View More</button>
+      <button type="button" className="custom__button" onClick={() => navigate(RoutingPath.menuView)}>View More</button>
     </div>
   </div>
   )

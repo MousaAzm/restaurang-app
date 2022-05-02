@@ -1,0 +1,76 @@
+
+.app__card_order {
+    display: flex;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.app__card_order_image {
+  display: flex;
+}
+
+.app__card_order_image img{
+    width: 6rem;
+    max-width: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+}
+
+.card_order_info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 12px;
+}
+
+.card_order_info h5 {
+    color: var(--color-gray);
+    font-weight: 700;
+    font-family: var(--font-poppins);
+    
+}
+.card_order_info h1 {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-family: var(--font-poppins);
+    font-size: 1.125rem;
+}
+
+.card_order_info p {
+    color: var(--color-gray);
+    font-weight: 400;
+    font-family: var(--font-poppins);
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.card_order_items_total {
+   display: flex;
+   padding: 0.5rem 1rem;
+   align-items: center;
+   
+}
+
+.card_order_items_total span{
+    color: var(--color-gray);
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+    font-family: var(--font-poppins);
+    font-weight: 700;
+}
+
+.order_flex_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order_flex_icon svg{
+    color: var(--color-gray);
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+

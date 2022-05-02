@@ -1,0 +1,74 @@
+.app_successful_main {
+    height: 100vh;
+    background: url(../../assets/images/successful-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.app_successful_spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.app_successful_container {
+    max-width: 1280px;
+    padding: 5rem 1.5rem;
+    margin: 0 auto;
+}
+
+.app_successful_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+    padding-top: 6rem;
+}
+
+.app_successful_column span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.app_successful_column span svg {
+    font-size: 52px;
+    color: var(--color-green);
+    font-weight: 900;
+}
+
+.app_successful_column h1 {
+    font-size: 2.8rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    color: var(--color-orange);
+    padding: 10px 0;
+    text-transform: capitalize;
+    font-family: var(--font-base);
+}
+
+.app_successful_column h2 {
+    color: var(--color-gray);
+    padding: 10px 0;
+    text-transform: capitalize;
+    font-family: var(--font-base);
+}
+
+.app_successful_column img {
+    object-fit: contain;
+    width: 24rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.app_successful_column .button-home {
+    padding: 0.5rem 2rem;
+    border-radius: 100px;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    text-transform: capitalize;
+    margin-top: 6rem;
+}

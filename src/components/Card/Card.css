@@ -1,12 +1,10 @@
 .app__card__item {
-    background: #fff;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
     margin: 15px;
     padding: 16px;
     text-align: center;
     --tw-bg-opacity: 1;
-    background-color: rgba(255,255,255,var(--tw-bg-opacity));
 }
 
 .app__card__item span {
@@ -25,6 +23,7 @@
 }
 
 .app__card__item h1 {
+    color: var(--color-white);
     padding: 7px;
     font-size: 18px;
     font-weight: 900;
@@ -37,7 +36,7 @@
 }
 
 .app__card__item h2 {
-    color: var(--color-black);
+    color: var(--color-white);
     font-weight: bold;
     padding-top: 10px;
 }
@@ -48,25 +47,24 @@
     padding: 10px 0;
 }
 
-.app__card__item button {
+.app__card__item .button {
     margin: 20px 0;
     font-weight: 500;
     font-size: 17px;
     cursor: pointer;
     display: inline-block;
     padding: 12px 32px;
-    border-radius: 50px;
-    transition: 0.3s;
+    transition: all 0.5s;
     line-height: 1;
-    color: var(--color-white);
-    background-color: var(--color-orange);
+    color: var(--color-orange);
+    background-color: transparent;
     border: 1px solid var(--color-orange);
 }
 
-.app__card__item button:hover {
-    transform: scale(1.1);
+.app__card__item .button:hover {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    transition: all 0.5s;
 }
 
-.app__card__item button:focus {
-    box-shadow: 0 0 0 0.2rem rgb(220 53 69 / 50%);
-}
+

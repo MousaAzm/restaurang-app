@@ -1,14 +1,14 @@
 import React from "react";
 import { Navbar } from "./components";
-import Routes from "./routes/Routes";
+import Routing from "./routes/Routing";
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <Routes>
-        <Navbar />
-      </Routes>
+      <Routing>      
+        <Navbar />   
+      </Routing>
     </div>
   );
 }
