@@ -10,11 +10,10 @@ const OrderPrice = () => {
     for (var i = 0; i < order.length; i++){
         allPrice += order[i].price * order[i].quantity
     }
-    console.log(allPrice)
 
     const subTotal = parseFloat(allPrice.toFixed(2));
-    const tax = parseFloat((allPrice % 5).toFixed(2));
-    const deliveryFee = parseFloat((allPrice % 20).toFixed(2));
+    const tax = parseFloat((allPrice % 2.5).toFixed(2));
+    const deliveryFee = parseFloat((allPrice % 5).toFixed(2));
     const total = parseFloat((subTotal + tax + deliveryFee).toFixed(2))
     
     return (

@@ -26,28 +26,16 @@ const MenuView = () => {
           <div className="app__display__bord">
             <div className="app__filter_btn_container">
               <div className="app__filter_button">
-                <p
-                  className={
-                    menuTab === "Breakfast" ? "active_menu_tab" : "menu_tab"
-                  }
-                  onClick={() => handleMenuTabs("Breakfast")}
-                >
+                <p className={ menuTab === "Breakfast" ? "active_menu_tab" : "menu_tab"}  
+                  onClick={() => handleMenuTabs("Breakfast")}>
                   Breakfast
                 </p>
-                <p
-                  className={
-                    menuTab === "Lunch" ? "active_menu_tab" : "menu_tab"
-                  }
-                  onClick={() => handleMenuTabs("Lunch")}
-                >
+                <p className={ menuTab === "Lunch" ? "active_menu_tab" : "menu_tab"} 
+                   onClick={() => handleMenuTabs("Lunch")}>
                   Lunch
                 </p>
-                <p
-                  className={
-                    menuTab === "Dinner" ? "active_menu_tab" : "menu_tab"
-                  }
-                  onClick={() => handleMenuTabs("Dinner")}
-                >
+                <p className={ menuTab === "Dinner" ? "active_menu_tab" : "menu_tab"} 
+                  onClick={() => handleMenuTabs("Dinner")}>
                   Dinner
                 </p>
               </div>
@@ -64,10 +52,7 @@ const MenuView = () => {
                   </span>
                 ) : (
                   <div className="app__display_card">
-                    {" "}
-                    {foods
-                      .filter((item) => menuTab === item.foodType)
-                      .map((food) => {
+                    {foods.filter((item) => menuTab === item.foodType).map((food) => {
                         return (
                           <Card
                             id={food.id}
