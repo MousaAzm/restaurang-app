@@ -38,7 +38,6 @@ const FoodDetailView = () => {
 
                     <div className="app__content_quantity">
                                 <h1>${(food.price * quantity).toFixed(2)}</h1>
-                                {/* quantity  */}
                                 <div className="app__quantity_button">
                                     <AiOutlineMinus onClick={() => {
                                         quantity === 1 ? setQuantity(1) : setQuantity(quantity - 1);
